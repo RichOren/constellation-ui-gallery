@@ -1,0 +1,26 @@
+{
+  "name": "Pega_Extensions_PDFEmBedded",
+  "label": "PDF Embedded Viewer",
+  "description": "PDF Embedded Viewer",
+  "organization": "Pega",
+  "version": "1.0.0",
+  "library": "Extensions",
+  "allowedApplications": [],
+  "componentKey": "Pega_Extensions_PDFEmBedded",
+  "type": "Template",
+  "subtype": "FORM",
+  "icon": "PDFViewer.svg",
+  "properties": [
+    {
+      "name": "label",
+      "label": "Heading",
+      "format": "TEXT"
+    },
+    {
+      "name": "showLabel",
+      "label": "Show FieldGroup Label",
+      "format": "BOOLEAN",
+      "defaultValue": true
+    }
+  ]
+}

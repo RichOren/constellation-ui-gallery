@@ -1,0 +1,33 @@
+{
+  "name": "Pega_Extensions_PdfEditor",
+  "label": "PDF Editor",
+  "description": "PDF Editor",
+  "organization": "Pega",
+  "version": "1.0.0",
+  "library": "Extensions",
+  "allowedApplications": [],
+  "componentKey": "Pega_Extensions_PdfEditor",
+  "type": "Template",
+  "subtype": "FORM",
+  "icon": "TwoColumn.svg",
+  "properties": [
+    {
+      "name": "A",
+      "label": "Region A",
+      "format": "CONTENTPICKER",
+      "allowCreatingGroup": true
+    },
+    {
+      "name": "B",
+      "label": "Region B",
+      "format": "CONTENTPICKER",
+      "allowCreatingGroup": true
+    },
+    {
+      "name": "C",
+      "label": "Region C",
+      "format": "CONTENTPICKER",
+      "allowCreatingGroup": true
+    }
+  ]
+}
