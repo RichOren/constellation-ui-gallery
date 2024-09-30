@@ -1,5 +1,5 @@
 import type { StoryObj } from '@storybook/react';
-import PegaExtensionsPdfEditor from './index';
+import { PegaExtensionsPdfEditor } from './index';
 
 import type { PegaExtensionsPdfEditorProps } from './index';
 
@@ -138,7 +138,6 @@ export const Default: Story = {
     skills: ['Skill1', 'Skill2'],
     name: 'Name',
     skillTitle: 'Skill Title',
-    children: null,
     schoollDesc: 'School Description',
     degree: 'Degree',
     school: 'School Name',

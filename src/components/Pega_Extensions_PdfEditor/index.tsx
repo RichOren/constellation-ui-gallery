@@ -19,18 +19,14 @@ export interface PegaExtensionsPdfEditorProps extends PConnFieldProps {
   skills: string[];
   name: string;
   skillTitle: string;
-  children: any;
   schoollDesc: string;
   degree: string;
   school: string;
   sectionTitle: string;
 }
 
-// props passed in combination of props from property panel (config.json) and run time props from Constellation
-// any default values in config.pros should be set in defaultProps at bottom of this file
 export const PegaExtensionsPdfEditor = (props: PegaExtensionsPdfEditorProps) => {
   const {
-    children = [],
     author,
     keywords,
     subject,
@@ -46,27 +42,6 @@ export const PegaExtensionsPdfEditor = (props: PegaExtensionsPdfEditorProps) => 
 
   const resumeProps = { skills, name, skillTitle, schoollDesc, degree, school, sectionTitle };
   const docProps = { author, keywords, subject, documentTitle };
-
-  // resumeProps.skillTitle = 'Skills';
-  // resumeProps.name = 'Combat Abilities';
-  /* resumeProps.skills = [
-    'Completed Jedi Master training and built a lightsaber from scratch in order to do battle against the Empire',
-    'Defeated the Rancor and rescued Princess Leia from Jabba the Hutt',
-    'Competent fighter pilot as well as an excelent shot with nearly any weapon'
-  ]; */
-
-  // docProps.author = 'Luke Skywalker';
-  /* docProps.keywords = 'awesome, resume, start wars';
-  docProps.subject = 'The resume of Luke Skywalker';
-  docProps.documentTitle = 'Resume'; */
-
-  const numRegions = children?.length;
-  const gridRepeat = 'repeat('.concat(numRegions).concat(', 1fr)');
-  const gridContainer = { colGap: 6, pad: 2 };
-  // @ts-ignore
-  gridContainer.cols = gridRepeat;
-  // @ts-ignore
-  gridContainer.alignItems = 'start';
 
   const flexContainer = { direction: 'column' };
   // @ts-ignore
@@ -84,7 +59,7 @@ export const PegaExtensionsPdfEditor = (props: PegaExtensionsPdfEditorProps) => 
                 subject={docProps.subject}
                 title={docProps.documentTitle}
                 pageMode='fullScreen'
-                pageLayout='twoColumnRight'
+                pageLayout='singlePage'
                 producer='Pega Constellation'
                 pdfVersion='1.5'
               >

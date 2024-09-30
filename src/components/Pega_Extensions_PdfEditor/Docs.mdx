@@ -3,7 +3,38 @@ import * as DemoStories from './demo.stories';
 
 <Meta of={DemoStories} />
 
-# Overview
+# PDF Viewer Component
+## React-Lib
+
+The `PDFViewer` component allows you to render and interact with PDF documents directly within a React application. It leverages **React** alongside popular libraries such as **PDF.js** and **PDF-Lib** to provide a seamless, in-browser PDF viewing experience with standard controls for navigation, zooming, and downloading the document.
+
+## Features
+
+### 1. **Document Rendering**
+   The PDFViewer renders PDF documents inside a React component using a iFrame rendering system. This allows users to view multi-page PDF documents directly within the web interface without needing additional software.
+
+### 2. **Page Navigation**
+   - **Current Page Display**: Displays the current page number along with the total number of pages in the PDF document.
+   - **Navigation Buttons**: The component includes easy-to-use buttons for navigating between pages of the document.
+     - **Next/Previous**: Navigate to the next or previous page.
+     - **Go to First/Last**: Jump to the first or last page of the document.
+
+### 3. **Zoom Controls**
+   - Users can easily zoom in and out of the document to adjust the view according to their preference. This includes:
+     - **Zoom In**: Increase the zoom level of the document.
+     - **Zoom Out**: Decrease the zoom level of the document.
+     - **Fit to Width/Height**: Automatically adjust the document size to fit the width or height of the viewer container.
+
+### 4. **Document Download and Printing**
+   - The viewer provides built-in functionality for **downloading** the document as a PDF file or **printing** it directly from the browser. This feature is integrated into the toolbar for easy access.
+
+### 5. **Full-Screen Mode**
+   - **Full-Screen View**: A button allows users to expand the document to full screen, providing a distraction-free viewing experience.
+
+### 6. **Responsive Design**
+   - The component is fully responsive, ensuring that it adapts to different screen sizes and devices. Whether on a desktop, tablet, or mobile device, users will have a smooth viewing experience.
+
+## Usage Example
 
 
 <Primary />
